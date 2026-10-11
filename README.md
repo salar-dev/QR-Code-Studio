@@ -272,7 +272,7 @@ The CI workflow (`.github/workflows/ci.yml`) runs all three suites on every pull
 
 ## Developer
 
-**Wasalat Developer**
+**Website Developer**
 GitHub: [@salar-dev](https://github.com/salar-dev)
 
 Issues and suggestions are welcome at [github.com/salar-dev/qr-code-studio/issues](https://github.com/salar-dev/qr-code-studio/issues).
