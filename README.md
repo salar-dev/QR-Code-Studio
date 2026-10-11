@@ -4,7 +4,7 @@
 
 QR Code Studio is a free, open-source QR code generator and designer. You enter content, style the code, check that it really scans, and download it as PNG, SVG, PDF, JPEG or WebP. No account, no tracking, no redirect service: static codes contain your content directly.
 
-**Live website:** https://salar-dev.github.io/qr-code-studio/
+**Live website:** https://salar-dev.github.io/QR-Code-Studio
 **Repository:** https://github.com/salar-dev/qr-code-studio
 
 ![QR Code Studio on desktop: presets, live preview with scan verification, and export settings](docs/screenshot-desktop.png)
