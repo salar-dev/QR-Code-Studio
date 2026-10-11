@@ -4,7 +4,7 @@ const PORT = Number(process.env.PAGES_PORT ?? 4173);
 
 /**
  * Tests the static GitHub Pages build exactly as it will be served:
- * under the /qr-code-studio base path, without a Node server.
+ * under the /QR-Code-Studio base path, without a Node server.
  *
  *   npm run test:e2e:pages
  */
@@ -16,13 +16,13 @@ export default defineConfig({
   reporter: [["list"]],
   use: {
     // Trailing slash matters: tests navigate with relative paths ("en/").
-    baseURL: `http://localhost:${PORT}/qr-code-studio/`,
+    baseURL: `http://localhost:${PORT}/QR-Code-Studio/`,
     acceptDownloads: true,
     trace: "retain-on-failure",
   },
   webServer: {
     command: `npm run build:pages && npm run preview:pages`,
-    url: `http://localhost:${PORT}/qr-code-studio/en/`,
+    url: `http://localhost:${PORT}/QR-Code-Studio/en/`,
     env: { PORT: String(PORT) },
     reuseExistingServer: !process.env.CI,
     timeout: 240_000,

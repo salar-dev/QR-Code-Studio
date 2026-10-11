@@ -4,8 +4,8 @@
 
 QR Code Studio is a free, open-source QR code generator and designer. You enter content, style the code, check that it really scans, and download it as PNG, SVG, PDF, JPEG or WebP. No account, no tracking, no redirect service: static codes contain your content directly.
 
-**Live website:** https://salar-dev.github.io/QR-Code-Studio
-**Repository:** https://github.com/salar-dev/qr-code-studio
+**Live website:** https://salar-dev.github.io/QR-Code-Studio/
+**Repository:** https://github.com/salar-dev/QR-Code-Studio
 
 ![QR Code Studio on desktop: presets, live preview with scan verification, and export settings](docs/screenshot-desktop.png)
 
@@ -96,8 +96,8 @@ QR Code Studio is a free, open-source QR code generator and designer. You enter 
 **Requirements:** Node.js 20.9 or newer (22 recommended, see `.nvmrc`) and npm.
 
 ```bash
-git clone https://github.com/salar-dev/qr-code-studio.git
-cd qr-code-studio
+git clone https://github.com/salar-dev/QR-Code-Studio.git
+cd QR-Code-Studio
 npm install
 npm run dev
 ```
@@ -111,7 +111,7 @@ Open http://localhost:3000. You are redirected to `/en` or `/ar` based on your s
 | `npm run dev` | Development server |
 | `npm run build` / `npm run start` | Production build and Node.js server (includes the optional upload API) |
 | `npm run build:pages` | Static export for GitHub Pages, written to `out/` |
-| `npm run preview:pages` | Serves `out/` like GitHub Pages at http://localhost:4173/qr-code-studio/ |
+| `npm run preview:pages` | Serves `out/` like GitHub Pages at http://localhost:4173/QR-Code-Studio/ |
 | `npm run typecheck` | TypeScript type check |
 | `npm run lint` | ESLint |
 | `npm test` | Unit tests (Vitest) |
@@ -135,11 +135,11 @@ The same codebase supports two targets.
 
 ### GitHub Pages (static, recommended)
 
-The repository includes a workflow, `.github/workflows/deploy-pages.yml`, that runs checks, builds the static export and publishes it on every push to `main`. The site is served from `https://salar-dev.github.io/qr-code-studio/`.
+The repository includes a workflow, `.github/workflows/deploy-pages.yml`, that runs checks, builds the static export and publishes it on every push to `main`. The site is served from `https://salar-dev.github.io/QR-Code-Studio/`.
 
 The Pages build:
 
-- Uses `output: "export"` with the `/qr-code-studio` base path and trailing slashes, so every page is a plain `index.html`.
+- Uses `output: "export"` with the `/QR-Code-Studio` base path and trailing slashes, so every page is a plain `index.html`.
 - Replaces the server proxy with a root `index.html` that sends visitors to their saved or browser language.
 - Publishes `404.html`, `robots.txt`, `sitemap.xml`, `manifest.webmanifest` and a social preview image (`og.png`).
 - Leaves out server-only code (files named `*.server.ts`, such as the upload API). The File content type then works with links to hosted files, and the upload option explains that uploads aren't available on this deployment.
@@ -169,7 +169,7 @@ See `.env.example`. All variables are optional.
 | Variable | Purpose |
 | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | Public URL used for canonical links, social previews and the sitemap. Set automatically by the Pages workflow. |
-| `PAGES_BASE_PATH` | Base path for the static export (default `/qr-code-studio`). Set automatically by the Pages workflow. |
+| `PAGES_BASE_PATH` | Base path for the static export (default `/QR-Code-Studio`). Set automatically by the Pages workflow. |
 | `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` (or `SUPABASE_SECRET_KEY`), `SUPABASE_STORAGE_BUCKET` | Enable file uploads (server target only) |
 | `UPLOAD_MAX_MB` | Upload size limit in MB (default 10, maximum 50) |
 
@@ -272,9 +272,9 @@ The CI workflow (`.github/workflows/ci.yml`) runs all three suites on every pull
 
 ## Developer
 
-**Website Developer**
+**Salar Dev**
 GitHub: [@salar-dev](https://github.com/salar-dev)
 
-Issues and suggestions are welcome at [github.com/salar-dev/qr-code-studio/issues](https://github.com/salar-dev/qr-code-studio/issues).
+Issues and suggestions are welcome at [github.com/salar-dev/QR-Code-Studio/issues](https://github.com/salar-dev/QR-Code-Studio/issues).
 
 <sub>QR Code is a registered trademark of DENSO WAVE INCORPORATED.</sub>

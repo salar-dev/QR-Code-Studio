@@ -5,7 +5,7 @@
  * the custom `404.html`.
  *
  *   npm run build:pages && npm run preview:pages
- *   → http://localhost:4173/qr-code-studio/
+ *   → http://localhost:4173/QR-Code-Studio/
  */
 import { createServer } from "node:http";
 import { readFile, stat } from "node:fs/promises";
@@ -13,7 +13,7 @@ import { extname, join, normalize, sep } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../out", import.meta.url));
-const basePath = (process.env.PAGES_BASE_PATH ?? "/qr-code-studio").replace(/\/+$/, "");
+const basePath = (process.env.PAGES_BASE_PATH ?? "/QR-Code-Studio").replace(/\/+$/, "");
 const port = Number(process.env.PORT ?? 4173);
 
 const TYPES = {

@@ -13,15 +13,15 @@
     "svg",
     "pdf"
   ],
-  "homepage": "https://salar-dev.github.io/qr-code-studio/",
+  "homepage": "https://salar-dev.github.io/QR-Code-Studio/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/salar-dev/qr-code-studio.git"
+    "url": "git+https://github.com/salar-dev/QR-Code-Studio.git"
   },
   "bugs": {
-    "url": "https://github.com/salar-dev/qr-code-studio/issues"
+    "url": "https://github.com/salar-dev/QR-Code-Studio/issues"
   },
-  "author": "Wasalat Developer (https://github.com/salar-dev)",
+  "author": "Salar Dev (https://github.com/salar-dev)",
   "engines": {
     "node": ">=20.9.0"
   },

@@ -4,7 +4,7 @@
  * browser code.
  */
 
-/** Public origin plus base path, e.g. https://salar-dev.github.io/qr-code-studio */
+/** Public origin plus base path, e.g. https://salar-dev.github.io/QR-Code-Studio */
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000").replace(/\/+$/, "");
 
 /** Path prefix when served from a sub-path (GitHub Pages project site), otherwise "". */
@@ -23,4 +23,4 @@ export const DEVELOPER = {
   github: "https://github.com/salar-dev",
 } as const;
 
-export const REPOSITORY_URL = "https://github.com/salar-dev/qr-code-studio";
+export const REPOSITORY_URL = "https://github.com/salar-dev/QR-Code-Studio";

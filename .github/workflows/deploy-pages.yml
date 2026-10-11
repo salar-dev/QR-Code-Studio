@@ -45,7 +45,7 @@ jobs:
         run: npm run build:pages
         env:
           DEPLOY_TARGET: github-pages
-          # "/qr-code-studio" for https://salar-dev.github.io/qr-code-studio/ ("" with a custom domain).
+          # "/QR-Code-Studio" for https://salar-dev.github.io/QR-Code-Studio/ ("" with a custom domain).
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
           NEXT_TELEMETRY_DISABLED: 1

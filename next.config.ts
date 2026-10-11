@@ -11,7 +11,7 @@ import type { NextConfig } from "next";
  */
 const isPagesBuild = process.env.DEPLOY_TARGET === "github-pages" || process.env.npm_lifecycle_event === "build:pages";
 
-const basePath = isPagesBuild ? (process.env.PAGES_BASE_PATH ?? "/qr-code-studio").replace(/\/+$/, "") : "";
+const basePath = isPagesBuild ? (process.env.PAGES_BASE_PATH ?? "/QR-Code-Studio").replace(/\/+$/, "") : "";
 const siteUrl = (
   process.env.NEXT_PUBLIC_SITE_URL || (isPagesBuild ? `https://salar-dev.github.io${basePath}` : "http://localhost:3000")
 ).replace(/\/+$/, "");
