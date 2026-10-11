@@ -144,13 +144,13 @@ test.describe("persistence and preferences", () => {
 
 test.describe("footer", () => {
   for (const [locale, label] of [
-    ["en", "Wasalat Developer on GitHub"],
-    ["ar", "Wasalat Developer على GitHub"],
+    ["en", "Salar Dev on GitHub"],
+    ["ar", "Salar Dev على GitHub"],
   ] as const) {
     test(`credits the developer with links to GitHub (${locale})`, async ({ page }) => {
       await openStudio(page, locale);
       const footer = page.locator("footer");
-      const name = footer.getByRole("link", { name: "Wasalat Developer", exact: true });
+      const name = footer.getByRole("link", { name: "Salar Dev", exact: true });
       await expect(name).toHaveAttribute("href", "https://github.com/salar-dev");
       await expect(name).toHaveAttribute("target", "_blank");
       await expect(name).toHaveAttribute("rel", /noopener/);

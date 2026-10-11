@@ -19,7 +19,7 @@ export function localePath(locale: string): string {
 }
 
 export const DEVELOPER = {
-  name: "Wasalat Developer",
+  name: "Salar Dev",
   github: "https://github.com/salar-dev",
 } as const;
 

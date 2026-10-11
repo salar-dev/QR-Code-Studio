@@ -98,6 +98,6 @@ test("SEO files and the social image are published", async ({ page, request }) =
 test("footer credits the developer", async ({ page }) => {
   await page.goto("en/");
   const footer = page.locator("footer");
-  await expect(footer.getByRole("link", { name: "Wasalat Developer", exact: true })).toHaveAttribute("href", "https://github.com/salar-dev");
-  await expect(footer.getByRole("link", { name: "Wasalat Developer on GitHub" })).toHaveAttribute("href", "https://github.com/salar-dev");
+  await expect(footer.getByRole("link", { name: "Salar Dev", exact: true })).toHaveAttribute("href", "https://github.com/salar-dev");
+  await expect(footer.getByRole("link", { name: "Salar Dev on GitHub" })).toHaveAttribute("href", "https://github.com/salar-dev");
 });

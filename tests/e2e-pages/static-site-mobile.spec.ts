@@ -11,6 +11,6 @@ for (const locale of ["en", "ar"] as const) {
       innerWidth: window.innerWidth,
     }));
     expect(scrollWidth).toBeLessThanOrEqual(innerWidth);
-    await expect(page.locator("footer").getByRole("link", { name: "Wasalat Developer", exact: true })).toBeVisible();
+    await expect(page.locator("footer").getByRole("link", { name: "Salar Dev", exact: true })).toBeVisible();
   });
 }
